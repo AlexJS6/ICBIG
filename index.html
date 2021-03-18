@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>ICBIG</title>
 </head>
 <body>
-    <p>ICBig utilise des cookies aux fins de fournir ses services et proposer des publicitÃ©s personnalisÃ©es. En utilisant le site, vous consentez Ã  cette utilisation selon les odalitÃ©s dÃ©crites dans notre Charte Cookies.</p>
+    <div>
+        <p><a href="#">ICBig utilise des cookies aux fins de fournir ses services et proposer des publicités personnalisées. En utilisant le site, vous consentez à  cette utilisation selon les modalités décrites dans notre Charte Cookies.</a></p>
+    </div>
     <header>
         <nav>
             <ul>
@@ -16,76 +18,145 @@
                 <li>FAQ</li>
             </ul>
         </nav>
-        <img src="../logo-icbig.png" alt="logo-icbig">
+        <div>
+            <h1>ICBIG</h1>
+            <p>A crazy webpage</p>
+        </div>
         <img src="../hhxMhkG.jpg" alt="Publicity">
-        <input type="text" placeholder="Enter your keyword here">
-        <button>Search</button>
+        <form action="" method="GET">
+            <input type="text" placeholder="Enter your keyword here">
+            <button>Search</button>
+        </form>
     </header>
     <section>
-        <aside>
+        <div>
             <div>
-                <img src="../menu_icons.png" alt="menu icons">
-                <h3>Categories</h3>
-                <p>Movies</p>
-                <p>Music</p>
-                <p>Games</p>
-                <ul>
-                    <li>Puzzles</li>
-                    <li>Cards</li>
-                    <li>Mazes</li>
-                </ul>
-                <p>Show</p>
-                <p>Software</p>
-                <p>Ebooks</p>
-                <p>FAQ</p>
-                <p>Sign Up</p>
+                <div>
+                    <h3>Categories</h3>
+                    <ul>
+                        <li>Movies</li>
+                        <li>Music</li>
+                        <li>Games</li>
+                        <ul>
+                            <li>Puzzles</li>
+                            <li>Cards</li>
+                            <li>Mazes</li>
+                        </ul>
+                        <li>Show</li>
+                        <li>Cards</li>
+                        <li>Ebooks</li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li>FAQ</li>
+                        <li>Sign Up</li>
+                    </ul>
+                </div>
             </div>
-            <h3>Testimonials</h3>
-            <p>"Super! On trouve vraiment de tous dans ce site. Et les explications sont très claires"Julie Detras,B</p>
-            <p>"Time for me to chose the best solutions to my problems! Thanks"Mike Powell,UK</p>
-
-        </aside>
+            <div>
+                <h3>Testimonials</h3>
+                <p>"Super! On trouve vraiment de tous dans ce site. Et les explications sont très claires"Julie Detras,B</p>
+                <p>"Time for me to chose the best solutions to my problems! Thanks"Mike Powell,UK</p>
+            </div>
+        </div>
 
         <h3>Statistics</h3>
-        <p>Games</p>
-        <p>Cards</p>
-        <p>Inscription</p>
         <div>
-            <img src="../keys.png" alt="key">
+            <ul>
+                <li>Games >></li>
+                <li>Cards >></li>
+                <li>Inscription</li>
+            </ul>
+        </div>
+        <div>
             <h3>Formulaire d'inscription</h3>
-            <p>Vous devez vous inscrire pour commencer Ã  jouer. L'inscription est rapide et gratuite.</p>
-            <p>Vous êtes déjà membre? Se connecter</p>
+            <p>Vous devez vous inscrire pour commencer Ã  jouer. L'inscription est <span>rapide et gratuite</span>.</p>
+            <p>Vous êtes déjà membre? <a href="#">Se connecter</a></p>
             <form action="" method="GET">
                 <input type="text" placeholder="Identifiant">
                 <input type="email" placeholder="E-mail">
                 <input type="email" placeholder="Confirmer e-mail">
                 <input type="password" placeholder="Mot de passe">
                 <label for="mydate">Date de naissance :</label>
-                <input type="date" name="mydate">
+                <input type="date" name="mydate" id="mydate">
                 <label for="myCountry">Pays :</label>
-                <select name="myCountry">
-                    <option value="Belgique">Belgique</option>
+                <select name="myCountry" id="myCountry">
+                    <option value=""></option>
+                    <option value="Belgique"></option>
+                    <option value="Autriche"></option>
+                    <option value="Pologne"></option>
                 </select>
-                <input type="radio" name="male">
+                <input type="radio" name="male" id="male">
                 <label for="male">Homme</label>
-                <input type="radio" name="female">
+                <input type="radio" name="female" id="female">
                 <label for="female">Femme</label>
-                <input type="checkbox" name="conditions">
+                <input type="checkbox" name="conditions" id="conditions">
                 <label for="conditions">J'accepte les Conditions d'utilisation et la Politique de confidentialité de ICBig.</label>
-                <img src="../signUpBtn.jpg" alt="SignUp">
+                <button><a href="#"><img src="../signUpBtn.jpg" alt="SignUp"></a></button> 
             </form>
-            <img src="../fb-google-plus-sign-in.png" alt="social media">
+            <div>
+                <p>https://developers.facebook.com/docs/facebook-login/web/login-button/</p>
+            </div>
         </div>
         <div>
             <h3>Comment jouer?</h3>
-            <img src="../video-cardgame.jpg" alt="video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/T4VIsCPxVZE?start=300" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
         <div>
-            <h3>Classement</h3>
-            <p>Mise à jour automatique dans 15 minutes.</p>
-            <img src="../highscore.png" alt="meilleures scores">
-            <img src="../top.png" alt="haut de page">
-            <p>Haut de page</p>
+            <div>
+                <h3>Classement</h3>
+                <p>Mise à jour automa<span>ti</span>que dans 15 minutes.</p>
+                <table>
+                    <tr>
+                        <th>#</th>
+                        <th>Rank</th>
+                        <th>Pseudo</th>
+                        <th>Score</th>
+                    </tr>
+                    <tr>
+                        <td colspan="3">top 3</td>
+                        <td>1</td>
+                        <td>KillerPlayer</td>
+                        <td>7500</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>TheFan</td>
+                        <td>6500</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>HatMan</td>
+                        <td>6350</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>4</td>
+                        <td>Dillinger</td>
+                        <td>4000</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>5</td>
+                        <td>BillyBoy</td>
+                        <td>3995</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>6</td>
+                        <td>HopeLess</td>
+                        <td>3500</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="4">Last Update: May 2017</td>
+                    </tr>
+                </table>
+            </div>
+            <div>
+                <img src="../top.png" alt="haut de page">
+                <p>Haut de page</p>
+            </div>
         </div>
     </section>
     <footer>
