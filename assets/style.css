@@ -1,5 +1,7 @@
 /*
 DONT FORGET FONT
+DEPLOY
+COMMENTS
 */
 
 
@@ -147,6 +149,7 @@ section #statistics ul li:nth-child(3) a {
     border: 1px solid rgb(224, 215, 215);
     display: grid;
     margin-left: 2em;
+    margin-right: 2em;
     grid-template-columns: 65% 35%;
     grid-template-rows: 20% 60% 20%;
 }
@@ -199,11 +202,59 @@ section #statistics ul li:nth-child(3) a {
 #formulaire #form #gender #male {
     display: inline;
 }
-#formulaire #form #form-end {
+#formulaire #form #form_end {
     grid-column: 1/2;
     grid-row: 3/3;
+    display: inline-block;
+}
+#formulaire #form #form_end label {
+    text-align: right;
+    display: inline;
+}
+#formulaire #form #form_end input {
+    display: inline;
+}
+#formulaire #form #form_end label a {
+    text-decoration: none;
+    color: rgb(62, 177, 223);
+}
+#formulaire #form button {
+    border: none;
+    background-color: #fff;
+    float: right;
+    margin: 1em 0em -2em 0em;
 }
 
+
+section #section_end {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-left: 2em;
+    margin-right: 2em;
+}
+section #section_end #comment_jouer {
+    display: block;
+    grid-column: 0/1;
+}
+section #section_end #classement {
+    display: block;
+    grid-column: 2/2;
+}
+section #section_end #classement table {
+    border-collapse: collapse;
+}
+section #section_end #classement table tr td,th{
+    border: 1px solid #000;
+}
+section #section_end #classement table tr th {
+    width: 4em;
+}
+section #section_end #classement table tr th #pseudo {
+    width: 6em;
+}
+section #section_end #classement table th {
+    background-color: rgb(67, 178, 197);
+}
 
 /*
 #page_top div:nth-child(1) h4 {
