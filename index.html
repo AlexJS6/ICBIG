@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <title>ICBIG</title>
 </head>
 <body>
@@ -25,7 +26,7 @@
         <div id="page_top">
             <div>
                 <h1><a href="#"><span>IC</span>BIG</a></h1>
-                <h4>A crazy webpage</h4>
+                <h5>A crazy webpage</h5>
             </div>
             <div >
                 <img src="assets/hhxMhkG.jpg" alt="Publicity" width="500px">
@@ -39,133 +40,142 @@
         </div>
     </header>
     <section>
-        <div>
+        <div id="categories">
             <div>
                 <div>
                     <h3>Categories</h3>
                     <ul>
-                        <li>Movies</li>
-                        <li>Music</li>
-                        <li>Games</li>
-                        <ul>
+                        <li><i class="fas fa-film fa-lg"></i>Movies</li>
+                        <li><i class="fas fa-music fa-lg"></i>Music</li>
+                        <li><i class="fas fa-gamepad fa-lg"></i>Games</li>
+                        <ul class="under_list">
                             <li>:Puzzles</li>
                             <li>:Cards</li>
                             <li>:Mazes</li>
                         </ul>
-                        <li>Show</li>
-                        <li>Cards</li>
-                        <li>Ebooks</li>
+                        <li><i class="fas fa-video fa-lg"></i>Shows</li>
+                        <li><i class="fas fa-laptop fa-lg"></i>Software</li>
+                        <li><i class="fas fa-tablet fa-lg"></i>Ebooks</li>
                     </ul>
+                </div>
+                <div id="second_list">
+                    <ul>
+                        <li><i class="fas fa-paperclip fa-lg"></i>FAQ</li>
+                        <li><i class="fas fa-clipboard-list fa-lg"></i>Sign Up</li>
+                    </ul>
+                </div>
+            </div>
+            <div id="testimonials">
+                <h3>Testimonials</h3>
+                <div>
+                    <p>"Super! On trouve vraiment de tous dans ce site. Et les explications sont très claires"</p>
+                    <p>Julie Detras,B</p>
                 </div>
                 <div>
-                    <ul>
-                        <li>FAQ</li>
-                        <li>Sign Up</li>
-                    </ul>
+                    <p>"Time for me to chose the best solutions to my problems! Thanks"</p>
+                    <p>Mike Powell,UK</p>
                 </div>
             </div>
+        </div>
+        <div id="statistics">
+            <h3 id="statistic_title">Statistics</h3>
             <div>
-                <h3>Testimonials</h3>
-                <p>"Super! On trouve vraiment de tous dans ce site. Et les explications sont très claires"Julie Detras,B</p>
-                <p>"Time for me to chose the best solutions to my problems! Thanks"Mike Powell,UK</p>
+                <ul>
+                    <li><a href="#">Games >></a></li>
+                    <li><a href="#">Cards >></a></li>
+                    <li><a href="#">Inscription</a></li>
+                </ul>
             </div>
-        </div>
-
-        <h3>Statistics</h3>
-        <div>
-            <ul>
-                <li><a href="#">Games >></a></li>
-                <li><a href="#">Cards >></a></li>
-                <li><a href="#">Inscription</a></li>
-            </ul>
-        </div>
-        <div>
-            <h3>Formulaire d'inscription</h3>
-            <p>Vous devez vous inscrire pour commencer à jouer. L'inscription est <span>rapide et gratuite</span>.</p>
-            <p>Vous êtes déjà membre? <a href="#">Se connecter</a></p>
-            <form action="#" method="GET">
-                <input type="text" placeholder="Identifiant">
-                <input type="email" placeholder="E-mail">
-                <input type="email" placeholder="Confirmer e-mail">
-                <input type="password" placeholder="Mot de passe">
-                <label for="mydate">Date de naissance :</label>
-                <input type="date" name="mydate" id="mydate">
-                <label for="myCountry">Pays :</label>
-                <select name="myCountry" id="myCountry">
-                    <option value=""></option>
-                    <option value="Belgique"></option>
-                    <option value="Autriche"></option>
-                    <option value="Pologne"></option>
-                </select>
-                <input type="radio" name="male" id="male">
-                <label for="male">Homme</label>
-                <input type="radio" name="female" id="female">
-                <label for="female">Femme</label>
-                <input type="checkbox" name="conditions" id="conditions">
-                <label for="conditions">J'accepte les Conditions d'utilisation et la Politique de confidentialité de ICBig.</label>
-                <button><a href="#"><img src="../signUpBtn.jpg" alt="SignUp"></a></button> 
-            </form>
-            <div>
-                <p>https://developers.facebook.com/docs/facebook-login/web/login-button/</p>
-            </div>
-        </div>
-        <div>
-            <h3>Comment jouer?</h3>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/T4VIsCPxVZE?start=300" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-        <div>
-            <div>
-                <h3>Classement</h3>
-                <p>Mise à jour automa<span>ti</span>que dans 15 minutes.</p>
-                <table>
-                    <tr>
-                        <th>#</th>
-                        <th>Rank</th>
-                        <th>Pseudo</th>
-                        <th>Score</th>
-                    </tr>
-                    <tr>
-                        <td colspan="3">top 3</td>
-                        <td>1</td>
-                        <td>KillerPlayer</td>
-                        <td>7500</td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>TheFan</td>
-                        <td>6500</td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td>HatMan</td>
-                        <td>6350</td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td>4</td>
-                        <td>Dillinger</td>
-                        <td>4000</td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td>5</td>
-                        <td>BillyBoy</td>
-                        <td>3995</td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td>6</td>
-                        <td>HopeLess</td>
-                        <td>3500</td>
-                    </tr>
-                    <tr>
-                        <td rowspan="4">Last Update: May 2017</td>
-                    </tr>
-                </table>
+            <div id="formulaire">
+                <div id="formulaire_demande">
+                    <h3>Formulaire d'inscription</h3>
+                    <p>Vous devez vous inscrire pour commencer à jouer. L'inscription est <span>rapide et gratuite</span>.</p>
+                    <p>Vous êtes déjà membre? <a href="#">Se connecter</a></p>
+                </div>
+                <div id="facebook">
+                    <img src="assets/fb-google-plus-sign-in.png" alt="fb-twitter-signin" width="230">
+                </div>
+                <form action="#" method="GET">
+                    <input type="text" placeholder="Identifiant">
+                    <input type="email" placeholder="E-mail">
+                    <input type="email" placeholder="Confirmer e-mail">
+                    <input type="password" placeholder="Mot de passe">
+                    <label for="mydate">Date de naissance :</label>
+                    <input type="date" name="mydate" id="mydate">
+                    <label for="myCountry">Pays :</label>
+                    <select name="myCountry" id="myCountry">
+                        <option value=""></option>
+                        <option value="Belgique"></option>
+                        <option value="Autriche"></option>
+                        <option value="Pologne"></option>
+                    </select>
+                    <input type="radio" name="male" id="male">
+                    <label for="male">Homme</label>
+                    <input type="radio" name="female" id="female">
+                    <label for="female">Femme</label>
+                    <input type="checkbox" name="conditions" id="conditions">
+                    <label for="conditions">J'accepte les Conditions d'utilisation et la Politique de confidentialité de ICBig.</label>
+                    <button><a href="#"><img src="../signUpBtn.jpg" alt="SignUp"></a></button> 
+                </form>
             </div>
             <div>
-                <img src="../top.png" alt="haut de page">
-                <p><a href="#">Haut de page</a></p>
+                <h3>Comment jouer?</h3>
+                <iframe width="400" height="255" src="https://www.youtube.com/embed/T4VIsCPxVZE?start=300" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div>
+                <div>
+                    <h3>Classement</h3>
+                    <p>Mise à jour automa<span>ti</span>que dans 15 minutes.</p>
+                    <table>
+                        <tr>
+                            <th>#</th>
+                            <th>Rank</th>
+                            <th>Pseudo</th>
+                            <th>Score</th>
+                        </tr>
+                        <tr>
+                            <td colspan="3">top 3</td>
+                            <td>1</td>
+                            <td>KillerPlayer</td>
+                            <td>7500</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>TheFan</td>
+                            <td>6500</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>HatMan</td>
+                            <td>6350</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>4</td>
+                            <td>Dillinger</td>
+                            <td>4000</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>5</td>
+                            <td>BillyBoy</td>
+                            <td>3995</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>6</td>
+                            <td>HopeLess</td>
+                            <td>3500</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="4">Last Update: May 2017</td>
+                        </tr>
+                    </table>
+                </div>
+                <div>
+                    <img src="../top.png" alt="haut de page">
+                    <p><a href="#">Haut de page</a></p>
+                </div>
             </div>
         </div>
     </section>
