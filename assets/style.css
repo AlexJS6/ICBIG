@@ -146,23 +146,62 @@ section #statistics ul li:nth-child(3) a {
 #formulaire {
     border: 1px solid rgb(224, 215, 215);
     display: grid;
+    margin-left: 2em;
     grid-template-columns: 65% 35%;
     grid-template-rows: 20% 60% 20%;
 }
 #formulaire #formulaire_demande {
     grid-column: 1/2;
     grid-row: 1/1;
+    margin-left: 5em;
 }
-#formulaire form {
+#formulaire #formulaire_demande h3 {
+    margin: 0.5em 0em 0em 0em;
+    font-size: 120%;
+}
+#formulaire #formulaire_demande span {
+    font-weight: bold;
+}
+#formulaire #form_image {
     grid-column: 1/1;
-    grid-row: 2/3;
+    grid-row: 1/1;
+    margin: 0.8em 3em 0em 0.6em;
 }
 #formulaire #facebook {
     grid-column: 2/2;
     grid-row: 2/2;
-    border-left: 1px solid rgb(224, 215, 215);
     margin: auto;
     padding-left: 1em;
+}
+#formulaire #form {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    margin: 1em 0em 0em 4.5em;
+    border-right: 1px solid rgb(224, 215, 215);
+}
+#formulaire #form #birth_date input {
+    display: inline-block;
+    margin-left: 2em;
+}
+#formulaire #form select {
+    display: inline-block;
+    margin-left: 2em;
+}
+#formulaire #form input {
+    display: block;
+    height: 2em;
+    margin: 0.3em 0em 0em 1em;
+    border: 1px solid rgb(151, 150, 150);
+}
+#formulaire #form #gender #female {
+    display: inline;
+}
+#formulaire #form #gender #male {
+    display: inline;
+}
+#formulaire #form #form-end {
+    grid-column: 1/2;
+    grid-row: 3/3;
 }
 
 

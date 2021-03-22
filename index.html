@@ -87,6 +87,9 @@
                 </ul>
             </div>
             <div id="formulaire">
+                <div id="form_image">
+                    <img src="assets/keys.png" alt="key image">
+                </div>
                 <div id="formulaire_demande">
                     <h3>Formulaire d'inscription</h3>
                     <p>Vous devez vous inscrire pour commencer à jouer. L'inscription est <span>rapide et gratuite</span>.</p>
@@ -95,28 +98,40 @@
                 <div id="facebook">
                     <img src="assets/fb-google-plus-sign-in.png" alt="fb-twitter-signin" width="230">
                 </div>
-                <form action="#" method="GET">
-                    <input type="text" placeholder="Identifiant">
-                    <input type="email" placeholder="E-mail">
-                    <input type="email" placeholder="Confirmer e-mail">
-                    <input type="password" placeholder="Mot de passe">
-                    <label for="mydate">Date de naissance :</label>
-                    <input type="date" name="mydate" id="mydate">
-                    <label for="myCountry">Pays :</label>
-                    <select name="myCountry" id="myCountry">
-                        <option value=""></option>
-                        <option value="Belgique"></option>
-                        <option value="Autriche"></option>
-                        <option value="Pologne"></option>
-                    </select>
-                    <input type="radio" name="male" id="male">
-                    <label for="male">Homme</label>
-                    <input type="radio" name="female" id="female">
-                    <label for="female">Femme</label>
-                    <input type="checkbox" name="conditions" id="conditions">
-                    <label for="conditions">J'accepte les Conditions d'utilisation et la Politique de confidentialité de ICBig.</label>
-                    <button><a href="#"><img src="../signUpBtn.jpg" alt="SignUp"></a></button> 
-                </form>
+                <div id="form">
+                    <form action="#" method="GET">
+                        <input type="text" placeholder="Identifiant">
+                        <input type="email" placeholder="E-mail">
+                        <input type="email" placeholder="Confirmer e-mail">
+                        <input type="password" placeholder="Mot de passe">
+                        <div id="birth_date">    
+                            <label for="mydate">Date de naissance :</label>
+                            <input type="date" name="mydate" id="mydate">
+                        </div>
+                        <label for="myCountry">Pays :</label>
+                        <select name="myCountry" id="myCountry">
+                            <option value=""></option>
+                            <option value="Belgique">Belgique</option>
+                            <option value="Autriche">Autriche</option>
+                            <option value="Pologne">Pologne</option>
+                        </select>
+                        <div id="gender">
+                            <div id="male">
+                                <input type="radio" name="male" id="male" value="male">
+                                <label for="male">Homme</label>
+                            </div>
+                            <div id="female">
+                                <input type="radio" name="female" id="female" value="female">
+                                <label for="female">Femme</label>
+                            </div>
+                        </div>
+                        <div id="form_end">
+                            <input type="checkbox" name="conditions" id="conditions">
+                            <label for="conditions">J'accepte les Conditions d'utilisation et la Politique de confidentialité de ICBig.</label>
+                        </div>
+                        <button><a href="#"><img src="assets/signUpBtn.jpg" alt="SignUp" width="200px"></a></button> 
+                    </form>
+                </div>
             </div>
             <div>
                 <h3>Comment jouer?</h3>
