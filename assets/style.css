@@ -239,9 +239,11 @@ section #section_end #comment_jouer {
 section #section_end #classement {
     display: block;
     grid-column: 2/2;
+    text-align: center;
 }
 section #section_end #classement table {
     border-collapse: collapse;
+    margin: auto;
 }
 section #section_end #classement table tr td,th{
     border: 1px solid #000;
@@ -252,17 +254,36 @@ section #section_end #classement table tr th {
 section #section_end #classement table tr th #pseudo {
     width: 6em;
 }
-section #section_end #classement table th {
-    background-color: rgb(67, 178, 197);
+section #section_end #classement table .yellow {
+    background-color: rgb(185, 206, 136);
+}
+section #section_end #classement table .gray {
+    background-color: rgb(146, 139, 139);
+}
+section #section_end #classement table tr:last-child, tr:first-child {
+    background-color: rgb(174, 193, 207);
+}
+section #section_end #classement #page_top_link {
+    text-align: end;
+    margin-right: 4em;
+}
+section #section_end #classement #page_top_link a {
+    color: #000;
+    margin-top: -0.5em;
+}
+section #section_end #classement #page_top_link::before {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-right: 0.2em;
+    content: "";
+    background: url("top.png") no-repeat 0 0;
+    background-size: 100%;
 }
 
-/*
-#page_top div:nth-child(1) h4 {
-    font-size: 120%;
-}*/
-/*#page_top div:nth-child(2) {
-    justify-content: center;
+
+hr {
+    border-top: 1px dotted #000;
+    margin: 1em auto auto 1em;
+    width: 80%;
 }
-#page_top div:nth-child(3) {
-    justify-content: flex-end;
-}*/
