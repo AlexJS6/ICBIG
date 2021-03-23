@@ -1,9 +1,3 @@
-/*
-DEPLOY
-VALIDATOR
-*/
-
-
 body {
     background-color: #555;
     display: grid;
@@ -244,7 +238,7 @@ section #section_end {
 }
 section #section_end #comment_jouer {
     display: block;
-    grid-column: 0/1;
+    grid-column: 1/1;
 }
 section #section_end #classement {
     display: block;
@@ -296,7 +290,6 @@ hr {
     border-top: 2px dotted rgb(75, 68, 68);
     margin: 2em auto 0em auto;
     width: 80%;
-    background-color: rgb(75, 68, 68);
 }
 
 footer ul {
@@ -332,7 +325,6 @@ footer p {
         margin: 1em 0em 0em 4.5em;
         border-right: none;
         margin-top: 4em;
-        margin-left: none;
     }
     #formulaire #form button {
         border: none;
