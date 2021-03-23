@@ -29,7 +29,7 @@
                 <h5>A crazy webpage</h5>
             </div>
             <div >
-                <img src="assets/hhxMhkG.jpg" alt="Publicity" width="500px">
+                <img src="assets/hhxMhkG.jpg" alt="Publicity" width="500">
             </div>
             <div>
                 <form action="#" method="GET">
@@ -47,12 +47,13 @@
                     <ul>
                         <li><i class="fas fa-film fa-lg"></i>Movies</li>
                         <li><i class="fas fa-music fa-lg"></i>Music</li>
-                        <li><i class="fas fa-gamepad fa-lg"></i>Games</li>
-                        <ul class="under_list">
-                            <li>:Puzzles</li>
-                            <li>:Cards</li>
-                            <li>:Mazes</li>
-                        </ul>
+                        <li><i class="fas fa-gamepad fa-lg">Games</i>
+                            <ul class="under_list">
+                                <li>:Puzzles</li>
+                                <li>:Cards</li>
+                                <li>:Mazes</li>
+                            </ul>
+                        </li>
                         <li><i class="fas fa-video fa-lg"></i>Shows</li>
                         <li><i class="fas fa-laptop fa-lg"></i>Software</li>
                         <li><i class="fas fa-tablet fa-lg"></i>Ebooks</li>
@@ -110,17 +111,17 @@
                         </div>
                         <label for="myCountry">Pays :</label>
                         <select name="myCountry" id="myCountry">
-                            <option value=""></option>
+                            <option value="empty">...</option>
                             <option value="Belgique">Belgique</option>
                             <option value="Autriche">Autriche</option>
                             <option value="Pologne">Pologne</option>
                         </select>
                         <div id="gender">
-                            <div id="male">
+                            <div id="male_div">
                                 <input type="radio" name="male" id="male" value="male">
                                 <label for="male">Homme</label>
                             </div>
-                            <div id="female">
+                            <div id="female_div">
                                 <input type="radio" name="female" id="female" value="female">
                                 <label for="female">Femme</label>
                             </div>
@@ -129,14 +130,14 @@
                             <input type="checkbox" name="conditions" id="conditions">
                             <label for="conditions">J'accepte les <a href="#">Conditions d'utilisation</a> et la <a href="#">Politique de confidentialité</a> de ICBig.</label>
                         </div>
-                        <button><a href="#"><img src="assets/signUpBtn.jpg" alt="SignUp" width="200px"></a></button> 
+                        <button type="submit"><img src="assets/signUpBtn.jpg" alt="SignUp" width="200"></button>
                     </form>
                 </div>
             </div>
             <div id="section_end">
                 <div id="comment_jouer">
                     <h3>Comment jouer?</h3>
-                    <iframe width="400" height="255" src="https://www.youtube.com/embed/T4VIsCPxVZE?start=300" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe width="400" height="255" src="https://www.youtube.com/embed/T4VIsCPxVZE?start=300" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
                 <div id="classement">
                     <h3>Classement</h3>
