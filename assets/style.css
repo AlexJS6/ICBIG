@@ -1,7 +1,5 @@
 /*
-DONT FORGET FONT
 DEPLOY
-COMMENTS
 */
 
 
@@ -9,13 +7,20 @@ body {
     background-color: #555;
     display: grid;
     margin: 0;
+    font-family: sans-serif;
 }
+/* -----------------LOGO, Publicity, search and cookie ------------*/
+
 .cookies {
     background-color: rgb(88, 173, 207);
     position: fixed;
     width: 100%;
     padding-left: 7%;
     padding-right: 7%;
+    color: #fff;
+}
+.cookies a {
+    color: rgb(214, 211, 211);
 }
 .nav1 {
     float: right;
@@ -50,7 +55,8 @@ body {
 }
 #page_top div:nth-child(1) h5 {
     margin-top: -16px;
-    font-size: 120%;
+    font-size: 90%;
+    color: #fff;
 }
 #page_top div:nth-child(2) {
     margin-top: 2em;
@@ -58,6 +64,8 @@ body {
 #page_top div:nth-child(3) {
     margin-top: 3em;
 }
+
+/* ----------------------SECTION Categories ------------------*/
 section {
     width: 80%;
     background-color: #fff;
@@ -125,13 +133,14 @@ section #categories #testimonials p {
     font-weight: bold;
 }
 
+/* ---------------------_SECTION Statistics--------------------*/
 
 section #statistics {
     grid-column: 2/2;
 }
 section #statistics #statistic_title {
-    background-color: rgb(199, 132, 31);
-    color: rgb(252, 253, 184);
+    background-color: rgb(214, 156, 69);
+    color: rgb(236, 238, 124);
     font-size: 150%;
     padding: 0em 0em 0em 0.5em;
     margin: 0em 0em 0em 0em;
@@ -144,7 +153,7 @@ section #statistics ul li:nth-child(3) a {
     color: #000;
     text-decoration: none;
 }
-
+/* ---------------- IN STATISTICS SECTION, THE FORM -------------------*/
 #formulaire {
     border: 1px solid rgb(224, 215, 215);
     display: grid;
@@ -225,12 +234,12 @@ section #statistics ul li:nth-child(3) a {
     margin: 1em 0em -2em 0em;
 }
 
+/* ---------------------SECTION END WITH VIDEO AND TABLE --------------*/
 
 section #section_end {
     display: grid;
     grid-template-columns: 50% 50%;
-    margin-left: 2em;
-    margin-right: 2em;
+    margin: 0em 2em 2em 2em;
 }
 section #section_end #comment_jouer {
     display: block;
@@ -281,9 +290,53 @@ section #section_end #classement #page_top_link::before {
     background-size: 100%;
 }
 
-
+/* _--------------------- FOOTER AND END NAV ----------------------*/
 hr {
-    border-top: 1px dotted #000;
-    margin: 1em auto auto 1em;
+    border-top: 2px dotted rgb(75, 68, 68);
+    margin: 2em auto 0em auto;
     width: 80%;
+    background-color: rgb(75, 68, 68);
 }
+
+footer ul {
+    text-align: center;
+}
+footer ul li {
+    display: inline;
+}
+footer ul li:nth-child(2) {
+    margin: 0em 2em 0em 2em;
+}
+footer ul li a {
+    text-decoration: none;
+    font-size: 120%;
+    color: rgb(179, 172, 172);
+}
+footer p {
+    text-align: center;
+}
+
+@media only screen and (max-width: 1300px) {
+    section #section_end #classement {
+        grid-column: 1/1;
+    }
+}
+@media only screen and (max-width: 1200px) {
+    #formulaire #facebook {
+        display: none;
+    }
+    #formulaire #form {
+        grid-column: 1/3;
+        grid-row: 2/3;
+        margin: 1em 0em 0em 4.5em;
+        border-right: none;
+        margin-top: 4em;
+        margin-left: none;
+    }
+    #formulaire #form button {
+        border: none;
+        background-color: #fff;
+        float: none;
+    }
+}
+
